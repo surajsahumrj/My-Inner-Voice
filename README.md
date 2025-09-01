@@ -1,5 +1,3 @@
----
-
 # ✨ My Inner Voices
 
 **A safe and anonymous platform to write down your inner thoughts, feelings, and secrets — the ones you can’t share with others.
@@ -116,7 +114,3 @@ service cloud.firestore {
 * 🌙 Dark mode support
 * 📱 PWA support for offline access
 * 🔔 Reminders & notifications
-
----
-
-Do you want me to also **design the `screenshots/` images for you (UI mockups)** so you don’t have to manually capture them?
