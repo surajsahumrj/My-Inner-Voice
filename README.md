@@ -1,79 +1,98 @@
-# 📝 My Inner Voice
+---
 
-A simple **note-taking web app** built with **Firebase Authentication** and **Cloud Firestore**.
-Users can log in with Google, create notes, edit, favorite, and delete them (moved to a "deleted" collection instead of hard deletion).
+# ✨ My Inner Voices
+
+**A safe and anonymous platform to write down your inner thoughts, feelings, and secrets — the ones you can’t share with others.
+Here you can express anything freely, without revealing your name or identity.**
+
+🔗 **Live Project:** [https://my-inner-voices.web.app/](https://my-inner-voices.web.app/)
+
+---
+
+## 📸 Screenshots
+
+### 📝 Home / Notes View
+<img width="1916" height="753" alt="image" src="https://github.com/user-attachments/assets/62edbd3c-024e-429e-9c37-6ee05daa5fee" />
+
+
+
+
+
 
 ---
 
 ## 🚀 Features
 
-* Google Authentication (Firebase Auth)
-* Add, edit, and delete notes
-* Favorite/unfavorite notes
-* Search by note content or author
-* Filter to show only favorite notes
-* Timestamps formatted as `8 August 2025, 00:46:35`
-* Deleted notes are stored in a separate `deleted` collection
+* 🖊️ Write your inner thoughts safely and anonymously
+* 🔒 No identity revealed, just pure self-expression
+* 📂 Organize notes and keep track of deleted ones
+* ☁️ Powered by Firebase for hosting & Firestore database
+* 📱 Simple, clean, distraction-free design
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Frontend**: Vanilla JavaScript, HTML, CSS
-* **Backend**: Firebase Authentication & Firestore
-* **Hosting**: Any static hosting service (Firebase Hosting, Vercel, Netlify, etc.)
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend & Hosting:** Firebase Hosting
+* **Database:** Firebase Firestore
 
 ---
 
-## ⚡ Setup Instructions
+## 🔧 Firebase Hosting Setup
 
-### 1. Clone the repository
+### 1. Install Firebase CLI
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/my-inner-voice.git
-cd my-inner-voice
+npm install -g firebase-tools
+firebase --version
 ```
 
-### 2. Configure Firebase
-
-Create a Firebase project at [Firebase Console](https://console.firebase.google.com/) and enable:
-
-* **Authentication** → Google Sign-In
-* **Firestore Database**
-
-Then copy your project’s config and replace the placeholders in `main.js`:
-
-```javascript
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY_HERE",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
-};
-```
-
-⚠️ **Important:** Do not commit your real keys to public repos. Keep them in `.env` if using a bundler (Vite/Next.js/etc.), or use placeholders like above.
-
----
-
-### 3. Run locally
-
-Open `index.html` directly in your browser (or use a local server).
-
-If using VS Code:
+### 2. Log in
 
 ```bash
-npx serve
+firebase login
+```
+
+### 3. Initialize project
+
+```bash
+firebase init
+```
+
+* Choose: **Hosting**
+* Select project: `my-inner-voices`
+* Public directory: `public`
+* Configure as single-page app: **Yes**
+
+### 4. Move files into `public/`
+
+```
+My Inner Voices/
+├── firebase.json
+├── public/
+    ├── index.html
+    ├── style.css
+    ├── main.js
+```
+
+### 5. Deploy
+
+```bash
+firebase deploy
+```
+
+Your app will go live at:
+
+```
+https://my-inner-voices.web.app
 ```
 
 ---
 
-## 🔐 Security Notes
+## 🔐 Firestore Security Rules
 
-* The Firebase API key is not a true secret, but you must set proper **Firestore rules** to protect your data.
-* Example rule (only authenticated users can read/write their own notes):
+To make sure notes are protected and only logged-in users can access them:
 
 ```js
 rules_version = '2';
@@ -91,15 +110,13 @@ service cloud.firestore {
 
 ---
 
-## 📌 Roadmap
+## 💡 Future Improvements
 
-* [ ] Add dark mode
-* [ ] Add tags/categories for notes
-* [ ] Allow restoring notes from "deleted" collection
-* [ ] Deploy live demo
+* 🧑‍🤝‍🧑 Optional login for personal journaling
+* 🌙 Dark mode support
+* 📱 PWA support for offline access
+* 🔔 Reminders & notifications
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License**.
+Do you want me to also **design the `screenshots/` images for you (UI mockups)** so you don’t have to manually capture them?
