@@ -11,7 +11,8 @@ Here you can express anything freely, without revealing your name or identity.**
 
 ### 📝 Home / Notes View
 
-\<img width="1916" height="753" alt="image" src="[https://github.com/user-attachments/assets/62edbd3c-024e-429e-9c37-6ee05daa5fee](https://github.com/user-attachments/assets/62edbd3c-024e-429e-9c37-6ee05daa5fee)" /\>
+<img width="1916" height="753" alt="image" src="https://github.com/user-attachments/assets/44a6f81a-50ec-479f-b3d6-79833eee8e56" />
+
 
 
 -----
