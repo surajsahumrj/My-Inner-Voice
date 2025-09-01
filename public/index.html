@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Inner Voice</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <h1>My Inner Voice</h1>
+        </div>
+        <div class="right">
+            <button id="favToggleBtn" class="fav-toggle-btn" style="display: none;">☆</button>
+            <input type="text" id="search" placeholder="Search notes...">
+            <button id="loginBtn">Login</button>
+            <button id="logoutBtn" style="display: none;">Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="note-form" id="noteFormSection" style="display:none;">
+            <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+            <button id="addNoteBtn">Add Note</button>
+        </section>
+
+        <section id="notesList"></section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+
+    
+</body>
+
+</html>
