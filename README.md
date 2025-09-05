@@ -1,9 +1,9 @@
-# My Inner Voices
+# Echos of Silence
 
 **A safe and anonymous platform to write down your inner thoughts, feelings, and secrets — the ones you can’t share with others.
 Here you can express anything freely, without revealing your name or identity.**
 
-🔗 **Live Project:** [https://my-inner-voices.web.app/](https://my-inner-voices.web.app/)
+🔗 **Live Project:** [https://my-inner-voices.web.app/](https://echosofsilence.web.app/)
 
 -----
 
@@ -11,7 +11,8 @@ Here you can express anything freely, without revealing your name or identity.**
 
 ### 📝 Home / Notes View
 
-<img width="1916" height="753" alt="image" src="https://github.com/user-attachments/assets/44a6f81a-50ec-479f-b3d6-79833eee8e56" />
+<img width="968" height="558" alt="image" src="https://github.com/user-attachments/assets/86ea66a8-58ec-4f8b-8bd8-13cce7541f41" />
+
 
 
 
