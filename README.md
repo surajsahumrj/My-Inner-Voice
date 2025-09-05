@@ -1,4 +1,4 @@
-# [Echos of Silence](https://echosofsilence.web.app/)
+# Echos of Silence
 
 **A safe and anonymous platform to write down your inner thoughts, feelings, and secrets — the ones you can’t share with others.
 Here you can express anything freely, without revealing your name or identity.**
